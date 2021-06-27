@@ -80,10 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'studyfun',
-        'USER' : 'admin2',
-        'PASSWORD' : 'password',
-        'HOST' : 'localhost',
-        'PORT' : '5432'
+        'USER': 'admin2',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
