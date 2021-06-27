@@ -9,14 +9,17 @@
         <title>StudyFun</title>
         <!-- Bootstrap core JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- JS for ChartJS Plugin -->
+        <!-- to implement -->
+        <script src="https://cdnjs.com/libraries/Chart.js"></script>
     </head>
     <body>
-        {% include 'front/partials/nav_settings.html' %}
+        {% include 'front/partials/nav_statistics.html' %}
 
-        <!-- Settings content -->
+        <!-- Statistics content -->
         <div class="background container content">
             <div class="text-center">
-                <button style="font-family: 'Benne', serif; font-size: 20px;" type="button" class="btn btn-warning" disabled>Settings</button>
+                <button style="font-family: 'Benne', serif; font-size: 20px;" type="button" class="btn btn-warning" disabled>Statistics</button>
             </div>
         </div>
 
@@ -24,6 +27,7 @@
         <div class="pt-4"></div>
 
         <div class="background2 container">
+            <canvas id="chart"></canvas>
         </div>
     </body>
 </html>

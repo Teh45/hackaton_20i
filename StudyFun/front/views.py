@@ -25,3 +25,9 @@ def add_keyword_definition_to_db(request: HttpRequest):
     keyword_definition_pair = Keyword_Definition_Dictionary(keyword=request.POST["keyword"], definition=request.POST["definition"], difficulty=request.POST["difficulty"])
     keyword_definition_pair.save()
     return redirect("/managestacks/viewstacks")
+
+
+    return render(request, 'front/page_settings.html')
+
+def statisticsPage(request):
+    return render(request, 'front/page_statistics.html')
