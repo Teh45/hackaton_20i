@@ -5,6 +5,7 @@
         <!-- Bootstrap core CSS -->
         <link href="{% static '/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static '/CSS/main_none_bootstrap.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <meta charset="UTF-8">
         <title>StudyFun</title>
         <!-- Bootstrap core JS -->
@@ -16,17 +17,44 @@
         <!-- Settings content -->
         <div class="background" style="height:1000px">
             <!-- TODO: Hooking this part up to the data base -->
-            <div class="column left" style="border-width: 0; border-right:3px; border-color:black; border-style: solid; padding-left:30px; height:1000px">
+            <div class="column left" style="border-width: 0; border-right:3px; border-color:black; border-style: solid; padding-left:30px; padding-right:30px; height:100%">
                 <h1>Stacks</h1>
-                <p style="font-size:25px">Stack 1</p>
-                <p style="font-size:25px">Stack 2</p>
+                <ul class="list-group m-2">
+                    <form action="{% url "stackInsertingPage" %}" autocomplete="off">
+                    <!-- {% csrf_token %} -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="stackName">
+                            <div class="input-group-append text-info">
+                                <span class="input-group-text">
+                                    <button type="submit" class="btn btn-sm text-info">
+                                        <i class="fa fa-plus-circle fa-lg"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    {% for stack in stacks_list %}
+                    <li class="list-group-item">{{stack.name}}
+                        <form action="{% url "stackDeletingPage" stack.id %}" method="post" class="float-right d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn">
+                                <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                            </button>
+                        </form>
+                    </li>
+                    {% empty %}
+                    <li class="list-group-item">
+                        <span class="font-italic">No stack found</span>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="column middle" style="border-width: 0; border-right:3px; border-color:black; border-style: solid; padding-left:30px; height:1000px">
+            <div class="column middle" style="border-width: 0; border-right:3px; border-color:black; border-style: solid; padding-left:30px; height:100%">
                 <h1>Keywords</h1>
                 <p style="font-size:25px">Keyword 1</p>
                 <p style="font-size:25px">Keyword 2</p>
             </div>
-            <div class="column right" style="padding-left:30px; height:1000px">
+            <div class="column right" style="padding-left:30px; height:100%">
                 <h1>Definitions</h1>
                 <p style="font-size:25px">Definition 1</p>
                 <p style="font-size:25px">Definition 2</p>
