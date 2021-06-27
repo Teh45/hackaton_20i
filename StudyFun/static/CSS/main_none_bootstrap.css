@@ -11,22 +11,19 @@
 
 .background {
     background-color: rgb(255, 255, 255, 0.3);
-    border-radius: 5px;
     padding: 20px;
 }
 
 .background2 {
     background-color: rgb(255, 255, 255, 0.3);
-    border-radius: 5px;
-    height: 500px;
 }
 
 .background:hover {
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .background2:hover {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .h4 {
@@ -34,7 +31,23 @@
 }
 
 body {
-    background-image: url("../assets/avenue-3385832.jpg");
-    image-height: 1800px;
-    background-size: 1500px;
+    background-image: url("../assets/avenue-3385832_cut.jpg");
+    background-size: 100%;
 }
+
+.column {
+    float: left
+}
+
+.left {
+    width: 25%
+}
+
+.middle {
+    width: 25%
+}
+
+.right {
+    width: 50%
+}
+

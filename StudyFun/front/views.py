@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpRequest
-from ...back.models import Keyword_Definition_Dictionary
+# from ..back import views
 
 
 # Create your views here.
@@ -10,15 +10,20 @@ def index(request):
     return render(request, 'front/page_home.html')
 
 
-def helpPage(request):
+def help_page(request):
     # Charging last input
-    return render(request,'front/page_help.html')
+    return render(request, 'front/page_help.html')
 
 
-def settingsPage(request):
+def settings_page(request):
     # Charging last input
-    result = 2
-    return render(request, 'front/page_settings.html', {'result': result})
+    return render(request, 'front/page_settings.html')
+
+
+def manage_stacks_page(request):
+    # Charging last input
+    # context = {"stacks_list": Keyword_Definition_Dictionary.objects.all()}
+    return render(request, 'front/page_managestacks.html')
 
 
 def add_keyword_definition_to_db(request: HttpRequest):
@@ -27,7 +32,5 @@ def add_keyword_definition_to_db(request: HttpRequest):
     return redirect("/managestacks/viewstacks")
 
 
-    return render(request, 'front/page_settings.html')
-
-def statisticsPage(request):
+def statistics_page(request):
     return render(request, 'front/page_statistics.html')

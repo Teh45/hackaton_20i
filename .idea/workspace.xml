@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a314726-2255-44f1-82b3-92aa7bd4f8ae" name="Default Changelist" comment="installed psycopg2">
+    <list default="true" id="0a314726-2255-44f1-82b3-92aa7bd4f8ae" name="Default Changelist" comment="added multi-table inheritance for the database models">
+      <change afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/page_managestacks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_managestacks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyFun/static/assets/avenue-3385832_cut.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyFun/StudyFun/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/StudyFun/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyFun/back/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/back/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/front/templates/front/page_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/page_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/templates/front/partials/nav_statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/front/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudyFun/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/front/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFun/static/CSS/main_none_bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFun/static/CSS/main_none_bootstrap.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,16 +32,24 @@
   <component name="ProjectId" id="1uUb5Y6MJhCpLGbc3rfIUHOw4zf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/StudyFun/front/templates/front/partials" />
     <property name="settings.editor.selected.configurable" value="restructured.text.topic" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lulat\PycharmProjects\hackaton_20i\StudyFun\front\templates\front\partials" />
+      <recent name="C:\Users\lulat\PycharmProjects\hackaton_20i\StudyFun\front\templates\front" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="DjangoScript" type="ShConfigurationType">
@@ -62,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624746112030</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added multi-table inheritance for the database models">
+      <created>1624755159983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624755159983</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,8 +107,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="nothing happened" />
     <MESSAGE value="installed psycopg2" />
-    <option name="LAST_COMMIT_MESSAGE" value="installed psycopg2" />
+    <MESSAGE value="added multi-table inheritance for the database models" />
+    <option name="LAST_COMMIT_MESSAGE" value="added multi-table inheritance for the database models" />
   </component>
 </project>
